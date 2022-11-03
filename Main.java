@@ -1,6 +1,7 @@
+import java.util.*;
 class Main {
   public static void main(String[] args) {
-    
+    Scanner input = new Scanner(System.in);
     /*Wisconsin State Tax Brackets:
     * 0-12760 -- 3.54% -- $0  
     * 12761 - $24420 -- 4.65 --$451.70
@@ -17,8 +18,6 @@ class Main {
     *35% -- $215,951 to $539,900. -- $49,335.50
     *37% -- $539,901 or more. --$162,718
 
-
-
     Social Seurity Tax:
     * $0- $147000 -- 6.2% -- $0
     * $147001 and over -- 0% -- $9114
@@ -27,4 +26,8 @@ class Main {
     * $0 - $200000 -- 1.45% -- 0%
     * $2000001 and over  -- 2.35% -- $2900
     */
+
+  System.out.println("How much money do make each year?");
+  
+    
 }
