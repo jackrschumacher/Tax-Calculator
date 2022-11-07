@@ -30,6 +30,8 @@ class Main {
       stateBracket++;
     }
   }
+
+  double stateTax = salary * statePercentage[stateBracket] + stateFlat[stateBracket];
     
   int fedBracket = 0;
     
@@ -55,6 +57,6 @@ class Main {
     }
   }
 
-  
+  System.out.println(stateTax+"\n");
   }
 }
