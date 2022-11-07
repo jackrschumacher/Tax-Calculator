@@ -12,6 +12,7 @@ class Main {
 
   double federalThreshold = {0, 10276, 41776, 89076, 170051, 215951, 539901}
   double federalPercentage = {10, 12, 22, 24, 32, 35, 37}
+  double federalFlat = {1027.50, 4807.50, 15213.50, 34647.50, 49355.50, 162718}
   
 
   

@@ -18,7 +18,7 @@ Wisconsin State Tax Brackets:
     * $0- $147000 -- 6.2% -- $0
     * $147001 and over -- 0% -- $9114
 
-    Medicare Tac
+    Medicare Tax
     * $0 - $200000 -- 1.45% -- 0%
     * $2000001 and over  -- 2.35% -- $2900
     */
