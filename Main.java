@@ -18,7 +18,7 @@ class Main {
   double[] socialSecurityPercentage = {0.62, 0};
   double[] socialSecurityFlat = {0, 9114};
 
-  double[] medicareTax = {0, 2000001};
+  double[] medicareThreshold = {0, 2000001};
   double[] medicarePercentage = {1.45, 2.35};
   double[] medicateFlat = {0,2900};
 
@@ -44,6 +44,14 @@ class Main {
   for(int i = 0; i < socialSecurityThreshold.length; i++){
     if(socialSecurityThreshold[i] >= salary){
       socialSecurityBracket++;
+    }
+  }
+
+  int medicareBracket = 0;
+
+  for(int i = 0; i < medicareThreshold.length; i++){
+    if(medicareThreshold[i] >= salary){
+      medicareBracket++;
     }
   }
 
