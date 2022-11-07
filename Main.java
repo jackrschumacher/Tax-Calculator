@@ -30,11 +30,20 @@ class Main {
       stateBracket++;
     }
   }
+    
   int fedBracket = 0;
     
   for(int i = 0; i < federalThreshold.length; i++){
     if(federalThreshold[i] >=salary){
       fedBracket++;
+    }
+  }
+
+  int socialSecurityBracket = 0;
+
+  for(int i = 0; i < socialSecurityThreshold.length; i++){
+    if(socialSecurityThreshold[i] >= salary){
+      socialSecurityBracket++;
     }
   }
 
