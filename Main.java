@@ -22,6 +22,14 @@ class Main {
   double[] medicarePercentage = {1.45, 2.35};
   double[] medicateFlat = {0,2900};
 
+
+  int stateBracket = 0;
+
+  for(int i = 0; i< stateThreshold.length; i++){
+    if(stateThreshold[i] >= salary){
+      stateBracket++;
+    }
+  }
   int fedBracket = 0;
     
   for(int i = 0; i < federalThreshold.length; i++){
@@ -30,7 +38,6 @@ class Main {
     }
   }
 
-  
   
   }
 }
