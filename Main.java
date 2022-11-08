@@ -6,7 +6,8 @@ class Main {
     // Setup a new scanner and take scanner input from the user
     System.out.println("How much money do you make each year?");
     double salary = input.nextDouble();
-
+    // Setup state, Federal, Social Secuirty, and Medicare Arrays
+    // Setup Thresholds ($ amount), Percentages, and Flat Rates in each of the arrays
     double[] stateThreshold = { 0, 12761, 25521, 280950 };
     double[] statePercentage = { 0.0354, 0.0465, 0.53, 0.0765 };
     double[] stateFlat = { 0, 451.70 , 1045.04, 14582.83 };
@@ -23,6 +24,8 @@ class Main {
     double[] medicarePercentage = { 0.0145, 0.0235 };
     double[] medicareFlat = { 0, 2900 };
 
+    // Setup state for loop. Sarts at 1 and continues as long as index is less than stateThreshold
+    // If slary is greater than the state Threshold the state bracket increments by 1
     int stateBracket = 0;
 
     for (int i = 1; i < stateThreshold.length; i++) {
