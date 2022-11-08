@@ -34,6 +34,8 @@ class Main {
       }
     }
 
+    // Setup federal for loop. Sarts at 1 and continues as long as index is less than federalThreshold
+    // If slary is greater than the federal Threshold the state bracket increments by 1
     int fedBracket = 0;
 
     for (int i = 1; i < federalThreshold.length; i++) {
@@ -41,7 +43,8 @@ class Main {
         fedBracket++;
       }
     }
-
+    // Setup Social Security for loop. Sarts at 1 and continues as long as index is less than socialSecurity Threshold
+    // If slary is greater than the Social Security Threshold the state bracket increments by 1
     int socialSecurityBracket = 0;
 
     for (int i = 1; i < socialSecurityThreshold.length; i++) {
@@ -49,7 +52,8 @@ class Main {
         socialSecurityBracket++;
       }
     }
-
+    // Setup medicare for loop. Sarts at 1 and continues as long as index is less than medicareThreshold
+    // If slary is greater than the medicare Threshold the state bracket increments by 1
     int medicareBracket = 0;
 
     for (int i = 1; i < medicareThreshold.length; i++) {
