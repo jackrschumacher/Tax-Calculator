@@ -26,7 +26,7 @@ class Main {
     int stateBracket = 0;
 
     for (int i = 1; i < stateThreshold.length; i++) {
-      if (stateThreshold[i] <= salary[i]) {
+      if (salary >= stateThreshold[i]) {
         stateBracket++;
       }
     }
@@ -34,7 +34,7 @@ class Main {
     int fedBracket = 0;
 
     for (int i = 1; i < federalThreshold.length; i++) {
-      if (federalThreshold[i] <= salary[i]) {
+      if (salary >= federalThreshold[i]) {
         fedBracket++;
       }
     }
@@ -42,7 +42,7 @@ class Main {
     int socialSecurityBracket = 0;
 
     for (int i = 1; i < socialSecurityThreshold.length; i++) {
-      if (socialSecurityThreshold[i] <= salary[i]) {
+      if (salary >= socialSecurityThreshold[i]) {
         socialSecurityBracket++;
       }
     }
@@ -50,7 +50,7 @@ class Main {
     int medicareBracket = 0;
 
     for (int i = 1; i < medicareThreshold.length; i++) {
-      if (medicareThreshold[i] <= salary[i]) {
+      if (salary >= medicareThreshold[i]) {
         medicareBracket++;
       }
     }  
