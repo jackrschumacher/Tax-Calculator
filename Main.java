@@ -13,14 +13,14 @@ class Main {
 
     double[] federalThreshold = { 0, 10276, 41776, 89076, 170051, 215951, 539901 };
     double[] federalPercentage = { .1, .12, .22, .24, .32, .35, .37 };
-    double[] federalFlat = { 1027.50, 4807.50, 15213.50, 34647.50, 49355.50, 162718.0 };
+    double[] federalFlat = { 0, 1027.50, 4807.50, 15213.50, 34647.50, 49355.50, 162718.0 };
 
     double[] socialSecurityThreshold = { 0, 1470001 };
     double[] socialSecurityPercentage = { 0.62, 0 };
     double[] socialSecurityFlat = { 0, 9114 };
 
     double[] medicareThreshold = { 0, 2000001 };
-    double[] medicarePercentage = { 1.45, 2.35 };
+    double[] medicarePercentage = { 0.0145, 0.0235 };
     double[] medicateFlat = { 0, 2900 };
 
     int stateBracket = 0;
@@ -56,6 +56,11 @@ class Main {
     }  
 
     double stateTax = (((salary - stateThreshold[stateBracket]) * statePercentage[stateBracket]) + stateFlat[stateBracket]);
-    System.out.println(stateTax);
+    System.out.println("State Taxed Amount"+stateTax);
+    double federalTax = ((salary - federalThreshold[federalBracket]) * federalPercentage[federalBracket])+ federalFlat[federalBracket]);
+    
+    System.out.println("Federal Taxed Amount"+ federalBracket);
+    
+    
   }
 }
