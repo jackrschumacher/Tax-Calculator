@@ -1,9 +1,9 @@
 import java.util.*;
-
+// Import all the things in the java.util library
 class Main {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
-
+    // Setup a new scanner and take scanner input from the user
     System.out.println("How much money do you make each year?");
     double salary = input.nextDouble();
 
