@@ -59,7 +59,7 @@ class Main {
     System.out.println("State Taxed Amount "+stateTax);
     double federalTax = (salary - federalThreshold[fedBracket] * federalPercentage[fedBracket] + federalFlat[fedBracket]);
     System.out.println("Federal Taxed Amount "+ federalTax);
-    double socialSecurityTax =(salary - socialSecurityThreshold[socialSecurityBracket] * socialSecurityPercentage[socialSecurityBracket] + socialSecurityFlat[socialSecurityBracket]);
+    double socialSecurityTax =(salary - socialSecurityThreshold[socialSecuirtyBracket] * socialSecurityPercentage[socialSecurityBracket] + socialSecurityFlat[socialSecuirtyBracket])
     System.out.println("Social Security Amount Taxed:" + socialSecurityTax);
     
     
