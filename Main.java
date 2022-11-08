@@ -21,7 +21,7 @@ class Main {
 
     double[] medicareThreshold = { 0, 2000001 };
     double[] medicarePercentage = { 0.0145, 0.0235 };
-    double[] medicateFlat = { 0, 2900 };
+    double[] medicareFlat = { 0, 2900 };
 
     int stateBracket = 0;
 
