@@ -57,9 +57,8 @@ class Main {
 
     double stateTax = (((salary - stateThreshold[stateBracket]) * statePercentage[stateBracket]) + stateFlat[stateBracket]);
     System.out.println("State Taxed Amount"+stateTax);
-    double federalTax = ((salary - federalThreshold[federalBracket]) * federalPercentage[federalBracket])+ federalFlat[federalBracket]);
-    
-    System.out.println("Federal Taxed Amount"+ federalBracket);
+    double federalTax = (((salary - federalThreshold[fedBracket]) * federalPercentage[fedBracket]) + federalFlat[fedBracket]);
+    System.out.println("Federal Taxed Amount"+ federalTax);
     
     
   }
