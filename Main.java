@@ -72,7 +72,9 @@ class Main {
     System.out.println("Social Security Amount Taxed:" + socialSecurityTax);
     double medicareTax = (((salary - medicareThreshold[medicareBracket])* medicarePercentage[medicareBracket]) + medicareFlat[medicareBracket]);
     System.out.println("Medicare amount Tax:" + medicareTax);
-    
-    
+
+    // Print out your income after taxes to the console
+    double total = salary - (stateTax + federalTax + socialSecurityTax + medicareTax);
+    System.out.println("Your total income, after taxes " + total + " Dollars");
   }
 }
