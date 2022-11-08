@@ -9,7 +9,7 @@ class Main {
     // Setup state, Federal, Social Secuirty, and Medicare Arrays
     // Setup Thresholds ($ amount), Percentages, and Flat Rates in each of the arrays
     double[] stateThreshold = { 0, 12761, 25521, 280950 };
-    double[] statePercentage = { 0.0354, 0.0465, 0.53, 0.0765 };
+    double[] statePercentage = { 0.0354, 0.0465, 0.053, 0.0765 };
     double[] stateFlat = { 0, 451.70 , 1045.04, 14582.83 };
 
     double[] federalThreshold = { 0, 10276, 41776, 89076, 170051, 215951, 539901 };
@@ -17,7 +17,7 @@ class Main {
     double[] federalFlat = { 0, 1027.50, 4807.50, 15213.50, 34647.50, 49355.50, 162718.0 };
 
     double[] socialSecurityThreshold = { 0, 1470001 };
-    double[] socialSecurityPercentage = { 0.62, 0 };
+    double[] socialSecurityPercentage = { 0.062, 0 };
     double[] socialSecurityFlat = { 0, 9114 };
 
     double[] medicareThreshold = { 0, 2000001 };
@@ -62,6 +62,8 @@ class Main {
       }
     }  
 
+    // Calculate federal, state, Medicare and Social Security Tax 
+    // Salary - Thresholds with the Brackets * the Percentage with the bracket + Flat rate with the bracket value
     double stateTax = (((salary - stateThreshold[stateBracket]) * statePercentage[stateBracket]) + stateFlat[stateBracket]);
     System.out.println("State Taxed Amount "+stateTax);
     double federalTax = (((salary - federalThreshold[fedBracket]) * federalPercentage[fedBracket]) + federalFlat[fedBracket]);
