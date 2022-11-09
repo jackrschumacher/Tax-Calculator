@@ -10,7 +10,7 @@ class Main {
     // Setup Thresholds ($ amount), Percentages, and Flat Rates in each of the arrays
     double[] stateThreshold = { 0, 12761, 25521, 280950 };
     double[] statePercentage = { 0.0354, 0.0465, 0.053, 0.0765 };
-    double[] stateFlat = { 0, 451.70 , 1045.04, 14582.83 };
+    double[] stateFlat = { 0, 451.70 , 1045.04, 14582.83};
 
     double[] federalThreshold = { 0, 10276, 41776, 89076, 170051, 215951, 539901 };
     double[] federalPercentage = { .1, .12, .22, .24, .32, .35, .37 };
@@ -22,7 +22,7 @@ class Main {
 
     double[] medicareThreshold = { 0, 2000001 };
     double[] medicarePercentage = { 0.0145, 0.0235 };
-    double[] medicareFlat = { 0, 2900 };
+    double[] medicareFlat = { 0, 2900 }; 
 
     // Setup state for loop. Sarts at 1 and continues as long as index is less than stateThreshold
     // If slary is greater than the state Threshold the state bracket increments by 1
